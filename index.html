@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio-Rätsel</title>
+    <title>Audio-Rätsel 2</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,15 +29,15 @@
         button:hover {
             background-color: #0056b3;
         }
-	img {
-       	 max-width: 150%;
-         height: auto;
-         margin-top: 10px;
-    }
-    .tip img {
-        width: 200px; /* Bildbreite anpassen */
-        height: auto; /* Automatische Höhe für Proportionen */
-    }
+        img {
+            max-width: 150%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .tip img {
+            width: 200px; /* Bildbreite anpassen */
+            height: auto; /* Automatische Höhe für Proportionen */
+        }
     </style>
     <script>
         function showTip(id) {
@@ -46,24 +46,26 @@
     </script>
 </head>
 <body>
-    <h1>Audio-Rätsel</h1>
+    <h1>Audio-Rätsel 2</h1>
     <p>Höre dir die Musik an und sortiere die Stücke nach Filmen!</p>
 
     <!-- Audio-Player -->
     <audio controls>
-        <source src="https://www.dropbox.com/scl/fi/9xurtz9rhydsdlw86jghr/2.m4a?rlkey=xo1quqyroye9yfdyytaf909dx&dl=1" type="audio/mpeg">
+        <source src="https://maike98.github.io/audio_raetsel-2/2.m4a">
         Dein Browser unterstützt keine Audio-Wiedergabe.
     </audio>
 
     <!-- Tipp-Buttons und Felder, immer unter dem Audio-Player -->
     <div>
         <button onclick="showTip('tip1')">Tipp 1</button>
-        <p id="tip1" class="tip">Ernsthaft? Ich bin enttäuscht.</p>
+        <p id="tip1" class="tip">Ein weiteres episches Stück aus einem Klassiker!</p>
     </div>
 
     <div>
         <button onclick="showTip('tip2')">Tipp 2</button>
-        <p id="tip2" class="tip"> <img src="https://www.dropbox.com/scl/fi/gdtshasx1oehmqg8izeso/2.jpeg?rlkey=nnibroy8yx5x6wi6as9f5uzmm&dl=1"</p>
+        <p id="tip2" class="tip">
+            <img src="https://maike98.github.io/audio_raetsel-2/2.jpeg" alt="Bild zum Tipp">
+        </p>
     </div>
 </body>
 </html>
